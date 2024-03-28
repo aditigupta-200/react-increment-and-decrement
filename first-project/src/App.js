@@ -1,6 +1,6 @@
-import {useState} from "react";
+import logo from "./logo.svg";
 import "./App.css";
-
+import {useState} from "react";
 function App() {
 
   const [count, setCount] = useState(''); // Initialize count state variable with value 0
@@ -30,14 +30,16 @@ function App() {
  
 
   return (
-    <form>
+    <div className="App">
+      <div className="text">
     <input type="number" value={count} onChange={handleChange} />
-    <p>Input the value: {setCount} {count}</p>
-
+    <p>Input the value {setCount} {count}</p>
+      </div>
     
-    <div className="form">
+    <div className="text">
       <h1>{count}</h1>
-      <div class="ab">
+      </div>
+      <div class="card">
       <button
       style={{
         fontSize: 32,
@@ -49,7 +51,7 @@ function App() {
       </div>
       <br></br>
 
-      <div class="ab">
+      <div class="card">
       <button
       style={{
         fontSize: 32,
@@ -61,7 +63,7 @@ function App() {
       </div>
       <br></br>
 
-      <div class="ab">
+      <div class="card">
       <button
       style={{
         fontSize: 32,
@@ -74,7 +76,7 @@ function App() {
       <br></br>
       
 
-      <div class="ab">
+      <div class="lcard">
       <button
       style={{
         fontSize: 32,
@@ -86,7 +88,8 @@ function App() {
       </div>
 
       </div>
-      </form>
+      
+      
   );
 }
 
