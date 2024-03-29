@@ -1,0 +1,23 @@
+
+.App {
+  border: 1px black solid; /* Set the border to 1px solid black */
+  width: 300px; /* Set the width of the .App container */
+  margin: 0 auto; /* Center the .App container horizontally */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+
+.card {
+  
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 200px;
+  margin-top: 10px;
+}
+
